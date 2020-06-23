@@ -51,14 +51,14 @@ a:focus {
   color: teal;
 }
 
-.text-container p:nth-child(1) {
+.hi {
   font-family: Calibri;
   font-weight: bold;
   color: #6d6d6d;
   font-size: 22px;
 }
 
-.text-container p:nth-child(2) {
+.intro {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
@@ -67,7 +67,7 @@ a:focus {
   margin: 0;
 }
 
-.text-container p:nth-child(3) {
+.desc-three {
   font-family: Calibri;
   font-weight: bold;
   color: #403e3e;
