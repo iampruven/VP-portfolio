@@ -16,7 +16,7 @@ nav {
   height: 60px;
   background-color: #ffffff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  padding: 0 5%;
+  /* padding: 0 5%; */
   margin: 0;
 }
 nav ul {
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
   margin: 20px;
   font-family: "Nunito", sans-serif;
-  columns: #505050;
+  color: #505050;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
@@ -41,6 +41,9 @@ a:focus {
 #home {
   color: #505050;
   font-size: 20px;
+}
+#home:active, #home:hover, #home:focus{
+    color: teal;
 }
 
 .text-container p:nth-child(1) {
@@ -80,7 +83,16 @@ a:focus {
   margin-left: 50px;
   margin-top: 50px;
 }
-#resume {
+.tech-style{
+    font-family: calibri;
+    font-weight:bold;
+    font-size:18px;
+    color: #1a1a1a;
+}
+.emphasizing{
+    font-weight: bold;
+}
+.btn-style {
   width: 130px;
   height: 42px;
   border-radius: 10px;
@@ -88,12 +100,12 @@ a:focus {
   font-weight: bold;
   font-size: 14px;
   outline: none;
-  margin: 0px 10px;
+  margin:10px;
   cursor: pointer;
 }
-#resume:active,
-#resume:hover,
-#resume:focus {
+.btn-style:active,
+.btn-style:hover,
+.btn-style:focus {
   background-color: tan;
 }
 #me-pic {
@@ -116,22 +128,27 @@ a:focus {
 .details {
   margin: 20px;
 }
-.details p:nth-child(2) {
+.details p:nth-child(1) {
   color: #3e3d3d;
   font-size: 20px;
   font-family: "Nunito" sans-serif;
   font-weight: bold;
   line-height: 10px;
 }
+.details p:nth-child(2),
 .details p:nth-child(3),
 .details p:nth-child(4),
 .details p:nth-child(5),
-.details p:nth-child(6),
-.details p:nth-child(7) {
+.details p:nth-child(6) {
   color: #7e7d7d;
   font-family: "Nunito", sans-serif;
   line-height: 15px;
   font-size: 16px;
+}
+.about-direction{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 .about-container {
   width: 80%;
@@ -142,13 +159,19 @@ a:focus {
   margin: 5% auto 20px auto;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   padding: 25px;
 }
 .project-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  background-color: #dbd5d5;
+}
+.project-direction {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .projects-1,
 .projects-2,
@@ -162,6 +185,21 @@ a:focus {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  color: #7e7d7d;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.grad {
+  background-image: linear-gradient(#f6f5f5, #dbd5d5);
+}
+
+h4 {
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 25px;
+  padding:5px;
+  color: #1a1a1a;
 }
 .resize-project {
   height: 450px;
@@ -174,16 +212,26 @@ a:focus {
   .text-container p:nth-child(2) {
     line-height: 3.1rem;
   }
-  .about-container {
+  .about-direction {
     display: flex;
     flex-direction: column;
   }
   #me-pic {
     margin-right: 0;
   }
-  .project-container {
+  .project-direction {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+  a{
+    text-decoration: none;
+    margin: 10px;
+    font-family: "Nunito", sans-serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
   }
 }

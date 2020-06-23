@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nunito:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nunito:wght@300;700&display=swap" rel="stylesheet">
     <title>Vendy Prum's Portfolio</title>
   </head>
   <body>
@@ -16,10 +13,10 @@
         <a id="home" href="#">Vendy Prum</a>
         <ul>
           <li>
-            <a href="#about-container">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Work</a>
+            <a href="#my-projects">Projects</a>
           </li>
           <li>
             <a href="#">Contact</a>
@@ -35,97 +32,160 @@
           World Traveler, and <br />
           Software Engineer.
         </p>
-        <button id="resume" type="submit">Resume</button>
+        <button class="btn-style" type="submit">Resume</button>
       </section>
-      <section class="about-container">
-        <div>
-          <img
-            id="me-pic"
-            src="img/me-greenhouse-jpn.png"
-            alt="greenhouse in japan"
-          />
-        </div>
-        <div class="details">
-          <p class="motto">This is me.</p>
-          <p>Developer & Designer</p>
-          <p>
-            My name is Vendy Prum and I am an aspiring Web/Software Developer
-            based in the San Francisco Bay Area.
-          </p>
-          <p>
-            I’m not afraid of taking on new challenges and am striving for a
-            brighter future, where I am met with new things to learn everyday. I
-            am ecstatic to pursue new opportunities and gain different skill
-            sets to help me face the world. I look forward to working with
-            passionate programmer teammates where we can share our knowledge and
-            succeed.
-          </p>
+      <section id="about" class="about-container">
+        <div><p class="motto">This is me.</p></div>
+        <div class="about-direction">
+          <div>
+            <img
+              id="me-pic"
+              src="img/me-greenhouse-jpn.png"
+              alt="greenhouse in japan"
+            />
+          </div>
+          <div class="details">
+            <p>Developer & Designer</p>
+            <p>
+              My name is Vendy Prum and I am an aspiring Web/Software Developer
+              based in the San Francisco Bay Area.
+            </p>
+            <p>
+              I’m not afraid of taking on new challenges and am striving for a
+              brighter future, where I am met with new things to learn everyday.
+              I am ecstatic to pursue new opportunities and gain different skill
+              sets to help me face the world. I look forward to working with
+              passionate programmer teammates where we can share our knowledge
+              and succeed.
+            </p>
 
-          <p>
-            Programming is something I have always wished I delved more into as
-            it is fascinating what people can build. I too, want the chance to
-            build my imagination.
-          </p>
-          <p>
-            My background is in Electrical Engineering and I have worked as a
-            Quality Engineer at fitbit for over 3 years on their class II
-            medical devices. I was the lead failure analysis engineer on the
-            medical devices and helped ensure the products were in compliance
-            with ISO and FDA regulations.
-          </p>
-          <p>
-            My day to day hobbies include going to the gym, bullet journaling,
-            baking, and traveling the world!
-          </p>
+            <p>
+              Programming is something I have always wished I delved more into
+              as it is fascinating what people can build. I too, want the chance
+              to build my imagination.
+            </p>
+            <p>
+              My background is in Electrical Engineering and I have worked as a
+              Quality Engineer at fitbit for over 3 years on their class II
+              medical devices. I was the lead failure analysis engineer on the
+              medical devices and helped ensure the products were in compliance
+              with ISO and FDA regulations.
+            </p>
+            <p>
+              My day to day hobbies include going to the gym, bullet journaling,
+              baking, and traveling the world!
+            </p>
+          </div>
         </div>
       </section>
-      <section class="project-container">
-        <div class="projects-1">
-          <div>
-            <img
-              class="resize-project"
-              alt="animal crossing museum donation tracker project"
-              src="img/project1.png"
-            />
+      <section id="my-projects" class="project-container grad">
+        <div class="centering motto"><p>Projects</p></div>
+        <div class="project-direction">
+          <div class="projects-1">
+            <div>
+              <h4>ACNH: <br />Museum Donation Tracker</h4>
+              <a href="https://capstone-one-vp.now.sh/" target="_blank">
+                <img
+                  class="resize-project"
+                  alt="animal crossing museum donation tracker project"
+                  src="img/project1.png"
+                />
+              </a>
+              <a
+                href="https://github.com/thinkful-ei-macaw/acnh-museum-donation-client-vendyp" target="_blank"
+                ><button class="btn-style">Frontend Github</button></a
+              >
+              <a
+                href="https://github.com/thinkful-ei-macaw/acnh-museum-donation-server-vendyp" target="_blank"
+                ><button class="btn-style">Backend Github</button></a
+              >
+              <p>
+                Nintendo's Animal Crossing: New Horizons companion application to assist
+                with managing items donated to the in game museum.
+              </p>
+            </div>
+            <div>
+              <p class="tech-style">Tech Stack</p>
+              <p>
+                <span class="emphasizing">Frontend:</span> <br />
+                HTML, CSS, REACT, JavaScript
+              </p>
+              <p><span class="emphasizing">Backend:</span> <br />Node.JS, Express.JS, REST, Knex</p>
+              <p>
+                <span class="emphasizing">Database:</span> <br />
+                PostgreSQL
+              </p>
+            </div>
           </div>
-          <div>
-            <h4>ACNH: Museum Donation Tracker</h4>
-            <p>Tech Stack:</p>
-            <p>Frontend:</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>REACT</li>
-              <li>JavaScript</li>
-            </ul>
-            <p>Backend:</p>
-            <ul>
-              <li>Node.JS</li>
-              <li>Express.JS</li>
-              <li>Knex</li>
-            </ul>
-            <p>Database:</p>
-            <ul>
-              <li>PostgreSQL</li>
-            </ul>
+          <div class="projects-2">
+            <h4>Spaced Repetition: <br />Learn Spanish</h4>
+            <div>
+              <a href="https://spaced-repetition-three.now.sh/" target="_blank">
+                <img
+                  class="resize-project"
+                  src="img/project2.png"
+                  alt="Spaced Repetition: Learn spanish one word at a time."
+                />
+              </a>
+              <a
+                href="https://github.com/thinkful-ei-macaw/SpacedRepition-client-VB"
+                target="_blank"
+                ><button class="btn-style">Frontend Github</button></a
+              >
+              <a
+                href="https://github.com/thinkful-ei-macaw/SpacedRepition-server-VB" target="_blank"
+                ><button class="btn-style">Backend Github</button></a
+              >
+              <p>Learn spanish one word at a time with repetition. This has been created utilizing a linked list data structure, and a specific algorithm.</p>
+            </div>
+            <div>
+              <p class="tech-style">Tech Stack</p>
+              <p>
+                <span class="emphasizing">Frontend:</span> <br />
+                HTML, CSS, REACT, JavaScript
+              </p>
+              <p><span class="emphasizing">Backend:</span> <br />Node.JS, Express.JS, REST, Knex</p>
+              <p>
+                <span class="emphasizing">Database:</span> <br />
+                PostgreSQL
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="projects-2">
-          <div>
-            <img
-              class="resize-project"
-              src="img/project2.png"
-              alt="Spaced Repetition: Learn spanish one word at a time."
-            />
-          </div>
-        </div>
-        <div class="projects-3">
-          <div>
-            <img
-              class="resize-project"
-              src="img/project3.png"
-              alt="clear mind: mindfulness journaling"
-            />
+          <div class="projects-3">
+            <h4>Clear Mind: <br />Mindful Journaling</h4>
+            <div>
+              <a href="https://clear-mind.now.sh/" target="_blank">
+                <img
+                  class="resize-project"
+                  src="img/project3.png"
+                  alt="clear mind: mindfulness journaling"
+              /></a>
+
+              <a
+                href="https://github.com/thinkful-ei-macaw/clear-awareness-client"
+                target="_blank"
+                ><button class="btn-style">Frontend Github</button></a
+              >
+              <a href="https://github.com/thinkful-ei-macaw/clear-awareness-api"
+              target="_blank"
+                ><button class="btn-style">Backend Github</button></a
+              >
+              <p>
+                This digital journaling application allows users to keep track of daily tasks, record inner thoughts, encourage mindful acts, and track sleep and emotional patterns.
+              </p>
+            </div>
+            <div>
+              <p class="tech-style">Tech Stack</p>
+              <p>
+                <span class="emphasizing">Frontend:</span> <br />
+                HTML, CSS, REACT, JavaScript
+              </p>
+              <p><span class="emphasizing">Backend:</span> <br />Node.JS, Express.JS, REST, Knex</p>
+              <p>
+                <span class="emphasizing">Database:</span> <br />
+                PostgreSQL
+              </p>
+            </div>
           </div>
         </div>
       </section>
