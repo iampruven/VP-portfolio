@@ -8,7 +8,9 @@ body {
 ul {
   list-style-type: none;
 }
-
+.logo-style {
+  padding-left: 10px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -16,7 +18,6 @@ nav {
   height: 60px;
   background-color: #ffffff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  /* padding: 0 5%; */
   margin: 0;
 }
 nav ul {
@@ -37,13 +38,17 @@ a:hover,
 a:focus {
   color: teal;
 }
-
+.desc-pad{
+    padding:10px;
+}
 #home {
   color: #505050;
   font-size: 20px;
 }
-#home:active, #home:hover, #home:focus{
-    color: teal;
+#home:active,
+#home:hover,
+#home:focus {
+  color: teal;
 }
 
 .text-container p:nth-child(1) {
@@ -83,14 +88,14 @@ a:focus {
   margin-left: 50px;
   margin-top: 50px;
 }
-.tech-style{
-    font-family: calibri;
-    font-weight:bold;
-    font-size:18px;
-    color: #1a1a1a;
+.tech-style {
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a1a1a;
 }
-.emphasizing{
-    font-weight: bold;
+.emphasizing {
+  font-weight: bold;
 }
 .btn-style {
   width: 130px;
@@ -100,7 +105,6 @@ a:focus {
   font-weight: bold;
   font-size: 14px;
   outline: none;
-  margin:10px;
   cursor: pointer;
 }
 .btn-style:active,
@@ -121,6 +125,14 @@ a:focus {
   font-size: 30px;
   line-height: 10px;
 }
+h2{
+    font-family:calibri;
+}
+.h-style{
+    font-family: "Homemade Apple", cursive;
+  font-size: 20px;
+  line-height: 10px;
+}
 .centering {
   display: flex;
   justify-content: center;
@@ -129,7 +141,7 @@ a:focus {
   margin: 20px;
 }
 .details p:nth-child(1) {
-  color: #3e3d3d;
+  color: #1a1a1a;
   font-size: 20px;
   font-family: "Nunito" sans-serif;
   font-weight: bold;
@@ -140,15 +152,16 @@ a:focus {
 .details p:nth-child(4),
 .details p:nth-child(5),
 .details p:nth-child(6) {
-  color: #7e7d7d;
+  color:  #1a1a1a;;
   font-family: "Nunito", sans-serif;
   line-height: 15px;
   font-size: 16px;
 }
-.about-direction{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.about-direction {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 15px;
 }
 .about-container {
   width: 80%;
@@ -177,7 +190,7 @@ a:focus {
 .projects-2,
 .projects-3 {
   background-color: #ffffff;
-  width: 300px;
+  width: 350px;
   margin: 30px;
   border-radius: 10px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -185,7 +198,7 @@ a:focus {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  color: #7e7d7d;
+  color:  #1a1a1a;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
@@ -193,12 +206,15 @@ a:focus {
 .grad {
   background-image: linear-gradient(#f6f5f5, #dbd5d5);
 }
+.dark-grad {
+  background-image: linear-gradient(#dbd5d5, #1a1a1a);
+}
 
 h4 {
   font-family: calibri;
   font-weight: bold;
   font-size: 25px;
-  padding:5px;
+  padding: 5px;
   color: #1a1a1a;
 }
 .resize-project {
@@ -207,6 +223,32 @@ h4 {
   border-radius: 10px;
   box-shadow: 10px 10px 8px 10px #888888;
   margin: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contact-container p:nth-child(2) {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.i-style {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+.org-btn{
+    display: flex;
+    flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
   .text-container p:nth-child(2) {
@@ -225,7 +267,8 @@ h4 {
     justify-content: center;
     align-items: center;
   }
-  a{
+
+  a {
     text-decoration: none;
     margin: 10px;
     font-family: "Nunito", sans-serif;
@@ -233,5 +276,12 @@ h4 {
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
+  }
+  .logo-style {
+    padding-left: 3px;
+  }
+  .org-btn{
+      display: flex;
+      flex-direction: column;
   }
 }

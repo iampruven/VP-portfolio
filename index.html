@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nunito:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vendy Prum's Portfolio</title>
   </head>
   <body>
     <main>
-      <nav>
-        <a id="home" href="#">Vendy Prum</a>
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#my-projects">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
+      <header>
+        <nav>
+          <h1 class="logo-style">Vendy Prum</h1>
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#my-projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <section class="text-container">
         <p class="hi">Hello,</p>
         <p class="intro">I'm Vendy Prum</p>
@@ -32,10 +36,12 @@
           World Traveler, and <br />
           Software Engineer.
         </p>
-        <button class="btn-style" type="submit">Resume</button>
+        <a href="files/vendyprum_resume.pdf" target="_blank">
+          <button class="btn-style" type="submit">Resume</button></a
+        >
       </section>
       <section id="about" class="about-container">
-        <div><p class="motto">This is me.</p></div>
+        <div><h1 class="motto">This is me.</h1></div>
         <div class="about-direction">
           <div>
             <img
@@ -79,11 +85,11 @@
         </div>
       </section>
       <section id="my-projects" class="project-container grad">
-        <div class="centering motto"><p>Projects</p></div>
+        <div class="centering h-style"><h1>Projects</h1></div>
         <div class="project-direction">
           <div class="projects-1">
             <div>
-              <h4>ACNH: <br />Museum Donation Tracker</h4>
+              <h2>ACNH: <br />Museum Donation Tracker</h2>
               <a href="https://capstone-one-vp.now.sh/" target="_blank">
                 <img
                   class="resize-project"
@@ -91,17 +97,21 @@
                   src="img/project1.png"
                 />
               </a>
-              <a
-                href="https://github.com/thinkful-ei-macaw/acnh-museum-donation-client-vendyp" target="_blank"
-                ><button class="btn-style">Frontend Github</button></a
-              >
-              <a
-                href="https://github.com/thinkful-ei-macaw/acnh-museum-donation-server-vendyp" target="_blank"
-                ><button class="btn-style">Backend Github</button></a
-              >
-              <p>
-                Nintendo's Animal Crossing: New Horizons companion application to assist
-                with managing items donated to the in game museum.
+              <div class="org-btn">
+                <a
+                  href="https://github.com/thinkful-ei-macaw/acnh-museum-donation-client-vendyp"
+                  target="_blank"
+                  ><button class="btn-style">Frontend Github</button></a
+                >
+                <a
+                  href="https://github.com/thinkful-ei-macaw/acnh-museum-donation-server-vendyp"
+                  target="_blank"
+                  ><button class="btn-style">Backend Github</button></a
+                >
+              </div>
+              <p class="desc-pad">
+                Nintendo Switch's Animal Crossing: New Horizons companion application
+                to assist with managing items donated to the in game museum.
               </p>
             </div>
             <div>
@@ -110,15 +120,20 @@
                 <span class="emphasizing">Frontend:</span> <br />
                 HTML, CSS, REACT, JavaScript
               </p>
-              <p><span class="emphasizing">Backend:</span> <br />Node.JS, Express.JS, REST, Knex</p>
+              <p>
+                <span class="emphasizing">Backend:</span> <br />Node.JS,
+                Express.JS, REST, Knex
+              </p>
               <p>
                 <span class="emphasizing">Database:</span> <br />
                 PostgreSQL
               </p>
+              <p><span class="emphasizing">Test Tech:</span> <br />
+                Jest, Mocha & Chai</p>
             </div>
           </div>
           <div class="projects-2">
-            <h4>Spaced Repetition: <br />Learn Spanish</h4>
+            <h2>Spaced Repetition: <br />Learn Spanish</h2>
             <div>
               <a href="https://spaced-repetition-three.now.sh/" target="_blank">
                 <img
@@ -127,16 +142,23 @@
                   alt="Spaced Repetition: Learn spanish one word at a time."
                 />
               </a>
-              <a
-                href="https://github.com/thinkful-ei-macaw/SpacedRepition-client-VB"
-                target="_blank"
-                ><button class="btn-style">Frontend Github</button></a
-              >
-              <a
-                href="https://github.com/thinkful-ei-macaw/SpacedRepition-server-VB" target="_blank"
-                ><button class="btn-style">Backend Github</button></a
-              >
-              <p>Learn spanish one word at a time with repetition. This has been created utilizing a linked list data structure, and a specific algorithm.</p>
+              <div class="org-btn">
+                <a
+                  href="https://github.com/thinkful-ei-macaw/SpacedRepition-client-VB"
+                  target="_blank"
+                  ><button class="btn-style">Frontend Github</button></a
+                >
+                <a
+                  href="https://github.com/thinkful-ei-macaw/SpacedRepition-server-VB"
+                  target="_blank"
+                  ><button class="btn-style">Backend Github</button></a
+                >
+              </div>
+              <p class="desc-pad">
+                Learn spanish one word at a time with repetition. This has been
+                created utilizing a linked list data structure, and a specific
+                algorithm.
+              </p>
             </div>
             <div>
               <p class="tech-style">Tech Stack</p>
@@ -144,15 +166,20 @@
                 <span class="emphasizing">Frontend:</span> <br />
                 HTML, CSS, REACT, JavaScript
               </p>
-              <p><span class="emphasizing">Backend:</span> <br />Node.JS, Express.JS, REST, Knex</p>
+              <p>
+                <span class="emphasizing">Backend:</span> <br />Node.JS,
+                Express.JS, REST, Knex
+              </p>
               <p>
                 <span class="emphasizing">Database:</span> <br />
                 PostgreSQL
               </p>
+              <p><span class="emphasizing">Test Tech:</span> <br />
+                Cypress, Mocha & Chai, Jest</p>
             </div>
           </div>
           <div class="projects-3">
-            <h4>Clear Mind: <br />Mindful Journaling</h4>
+            <h2>Clear Mind: <br />Mindful Journaling</h2>
             <div>
               <a href="https://clear-mind.now.sh/" target="_blank">
                 <img
@@ -160,18 +187,22 @@
                   src="img/project3.png"
                   alt="clear mind: mindfulness journaling"
               /></a>
-
-              <a
-                href="https://github.com/thinkful-ei-macaw/clear-awareness-client"
-                target="_blank"
-                ><button class="btn-style">Frontend Github</button></a
-              >
-              <a href="https://github.com/thinkful-ei-macaw/clear-awareness-api"
-              target="_blank"
-                ><button class="btn-style">Backend Github</button></a
-              >
-              <p>
-                This digital journaling application allows users to keep track of daily tasks, record inner thoughts, encourage mindful acts, and track sleep and emotional patterns.
+              <div class="org-btn">
+                <a
+                  href="https://github.com/thinkful-ei-macaw/clear-awareness-client"
+                  target="_blank"
+                  ><button class="btn-style">Frontend Github</button></a
+                >
+                <a
+                  href="https://github.com/thinkful-ei-macaw/clear-awareness-api"
+                  target="_blank"
+                  ><button class="btn-style">Backend Github</button></a
+                >
+              </div>
+              <p class="desc-pad">
+                This digital journaling application allows users to keep track
+                of daily tasks, record inner thoughts, encourage mindful acts,
+                and track sleep and emotional patterns.
               </p>
             </div>
             <div>
@@ -180,15 +211,43 @@
                 <span class="emphasizing">Frontend:</span> <br />
                 HTML, CSS, REACT, JavaScript
               </p>
-              <p><span class="emphasizing">Backend:</span> <br />Node.JS, Express.JS, REST, Knex</p>
+              <p>
+                <span class="emphasizing">Backend:</span> <br />Node.JS,
+                Express.JS, REST, Knex
+              </p>
               <p>
                 <span class="emphasizing">Database:</span> <br />
                 PostgreSQL
+                
               </p>
+              <p><span class="emphasizing">Test Tech:</span> <br />
+                Jest, Mocha & Chai</p>
             </div>
           </div>
         </div>
       </section>
+      <section id="contact-me" class="contact-container dark-grad">
+        <div>
+          <h2 class="motto">Like what you see?</h2>
+          <p>Contact me!</p>
+          <div class="centering">
+            <a href="https://www.linkedin.com/in/vendy-prum/"
+              ><i class="fab fa-linkedin i-style"></i
+            ></a>
+            <a href="https://github.com/iampruven/"
+              ><i class="fab fa-github-square i-style"></i
+            ></a>
+            <a href="mailto:vendyprum@gmail.com"
+              ><i class="fas fa-envelope-square i-style"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script
+      src="https://kit.fontawesome.com/2d111d3925.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
